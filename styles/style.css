@@ -12,6 +12,7 @@ Custon Styles
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
 .padding {
@@ -33,13 +34,31 @@ body {
 	color: #8ee5ee;
 }
 
+.button {
+	display: inline-block;
+	margin: 65px 0 30px;
+	background: transparent;
+	border-radius: 3px;
+	padding: 15px 20px;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: all 0.4s ease;
+}
+
 h2 {
 	margin-bottom: 50px;
+	font-size: 2.5em;
 }
 
 h5 {
 	font-size: 1em;
 	margin-bottom: 25px;
+}
+
+p {
+	font-size: 1.25em;
+	line-height: 1.7em;
 }
 
 a {
@@ -48,7 +67,7 @@ a {
 }
 
 a:hover {
-	color: rgba(255,255,255,0.6);
+	color: rgba(255,255,255,0.5);
 	text-decoration: none;
 }
 
@@ -64,7 +83,7 @@ Navbar
 	font-style: italic;
 }
 
-#home nav {
+nav {
 	padding: 5px 0;
 	background: #1e2188;
 	color: white;
@@ -92,7 +111,6 @@ nav li a:hover {
 #home {
 	background: url('./images/cover.jpg') center center no-repeat;
 	background-size: cover;
-	text-align: center;
 	color: white;
 	letter-spacing: 2px;
 }
@@ -103,21 +121,47 @@ nav li a:hover {
 }
 
 #home .button {
-	display: inline-block;
-	margin: 50px 0 35px;
-	background: transparent;
 	border: 3px solid white;
-	border-radius: 3px;
-	padding: 15px 20px;
-	font-size: 1.3em;
-	text-transform: uppercase;
-	letter-spacing: 3px;
 	color: white;
 }
 
 #home .button:hover {
 	background: white;
-	color: #222;
+	color: black;
+}
+
+/*
+========================
+About
+========================
+*/
+
+#about img {
+	width: 80%;
+}
+
+#about .button {
+	width: 300px;
+	border: 3px solid black;
+}
+
+#about .button:hover {
+	background: black;
+	color: white;
+}
+
+/*
+========================
+Grooming
+========================
+*/
+
+#grooming {
+	background: #ddd;
+}
+
+#grooming img {
+	width: 90%;
 }
 
 /*
@@ -127,9 +171,8 @@ Footer/Contact
 */
 
 footer {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 	color: white;
-	text-align: center;
 	letter-spacing: 1.8px;
 }
 
@@ -138,10 +181,9 @@ footer h3 {
 }
 
 footer h5 {
-	text-align: center;
 	margin-bottom: 35px;
 }
 
 footer .fa-facebook-square {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
