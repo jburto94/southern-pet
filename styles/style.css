@@ -64,6 +64,7 @@ p {
 a {
 	color: inherit;
 	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 a:hover {
@@ -79,34 +80,80 @@ Navbar
 
 .logo {
 	font-family: 'PT Serif', serif;
+	font-size: 2.2em;
 	font-weight: bold;
 	font-style: italic;
+	float: left;
+	display: inline-block;
+	padding-top: 10px;
 }
 
 nav {
+	width: 100%;
 	padding: 5px 0;
-	background: #1e2188;
+	background: #121554;
 	color: white;
 	letter-spacing: initial;
-	visibility: hidden;
+	position: fixed;
+	top: -80px;
+	transition: all 0.3s linear;
+	z-index: 100;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-nav > div {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+#nav-collapse {
+	color: white;
+	cursor: pointer;
+	display: none;
+	float: right;
+	margin: 10px 0;
 }
 
-nav li {
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	float: right;
+	display: inline-block;
+}
+
+nav ul li {
 	display: inline-block;
 	font-size: 1.2em;
 	padding: 15px;
 }
 
-nav li a:hover {
-	color: rgba(255, 255, 255, 0.7);
+nav ul a:hover {
+	color: rgba(255, 255, 255, 0.4);
 	cursor: pointer;
 }
+
+/* Displays nav as a block level list */
+.showNav {
+	display: block;
+	width: 100%;
+}
+
+/* collapses navbar on smaller viewports */
+@media only screen and (max-width: 992px) {
+	nav ul {
+		display: none;
+		float: none;
+		clear: both;
+	}
+	.navigation li {
+		display: block;
+		width: 100%;
+	}
+	#nav-collapse {
+		display: inline-block;
+	}
+}
+
+/*
+========================
+Home
+========================
+*/
 
 #home {
 	background: url('./images/cover.jpg') center center no-repeat;
@@ -125,6 +172,14 @@ nav li a:hover {
 	color: white;
 }
 
+/* automatically highlights button for smaller viewports */
+@media only screen and (max-width: 992px) {
+	#home .button {
+		background: white;
+		color: black;
+	}
+}
+
 #home .button:hover {
 	background: white;
 	color: black;
@@ -138,15 +193,25 @@ About
 
 #about img {
 	width: 80%;
+	margin-bottom: 30px;
 }
 
 #about .button {
 	width: 300px;
-	border: 3px solid black;
+	border: 3px solid #121554;
+	color: #121554;
+}
+
+/* automatically highlights button for smaller viewports */
+@media only screen and (max-width: 992px) {
+	#about .button {
+		background: #121554;
+		color: white;
+	}
 }
 
 #about .button:hover {
-	background: black;
+	background: #121554;
 	color: white;
 }
 
@@ -161,7 +226,7 @@ Grooming
 }
 
 #grooming img {
-	width: 90%;
+	width: 100%;
 }
 
 /*
@@ -177,13 +242,14 @@ footer {
 }
 
 footer h3 {
-	margin-bottom: 50px;
+	margin: 50px 0 30px;
+	font-weight: bold;
 }
 
 footer h5 {
 	margin-bottom: 35px;
 }
 
-footer .fa-facebook-square {
+footer i {
 	margin-bottom: 30px;
 }
