@@ -1,0 +1,131 @@
+/*
+======================
+Custon Styles 
+======================
+*/
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.padding {
+	padding: 100px 0;
+}
+
+.filter {
+	background: rgba(0,0,0,0.6);
+}
+
+h2 {
+	margin-bottom: 50px;
+}
+
+h5 {
+	font-size: 1em;
+	margin-bottom: 25px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+
+/*
+========================
+Navbar
+========================
+*/
+
+.logo {
+	font-family: 'PT Serif', serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#home nav {
+	padding: 5px 0;
+	background: #1e2188;
+	color: white;
+	letter-spacing: initial;
+	visibility: hidden;
+}
+
+nav > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+nav li a:hover {
+	color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+
+#home {
+	background: url('./images/cover.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	letter-spacing: 2px;
+}
+
+#home h1 {
+	margin: 45px 0 30px;
+	font-size: 3em;
+}
+
+#home .button {
+	display: inline-block;
+	margin: 50px 0 35px;
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 3px;
+	padding: 15px 20px;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: white;
+}
+
+#home .button:hover {
+	background: white;
+	color: #222;
+}
+
+/*
+========================
+Footer/Contact
+========================
+*/
+
+footer {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+	letter-spacing: 1.8px;
+}
+
+footer h3 {
+	margin-bottom: 50px;
+}
+footer h5 {
+	text-align: left;
+	margin-top: ;
+}
