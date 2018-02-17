@@ -1,0 +1,161 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+.padding {
+  padding: 100px 0; }
+
+.filter {
+  background: rgba(0, 0, 0, 0.6); }
+
+.highlight {
+  color: #8ee5ee; }
+
+.button {
+  display: inline-block;
+  margin: 65px 0 30px;
+  background: transparent;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.4s ease; }
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 2.5em; }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 25px; }
+
+p {
+  font-size: 1.25em;
+  line-height: 1.7em; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+nav {
+  width: 100%;
+  padding: 5px 0;
+  background: #121554;
+  color: white;
+  letter-spacing: initial;
+  position: fixed;
+  top: -80px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  nav .logo {
+    font-family: 'PT Serif', serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    display: inline-block;
+    padding-top: 10px; }
+  nav #nav-collapse {
+    color: white;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin: 10px 0; }
+    @media only screen and (max-width: 992px) {
+      nav #nav-collapse {
+        display: inline-block; } }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    display: inline-block; }
+    @media only screen and (max-width: 992px) {
+      nav ul {
+        display: none;
+        float: none;
+        clear: both; } }
+  nav .navItem {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px; }
+    nav .navItem:hover {
+      color: white;
+      cursor: pointer;
+      background: #0d103f; }
+    @media only screen and (max-width: 992px) {
+      nav .navItem {
+        display: block;
+        width: 100%; } }
+  nav .showNav {
+    display: block;
+    width: 100%; }
+
+#home {
+  background: url("../images/cover.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 2px; }
+  #home h1 {
+    margin: 45px 0 30px;
+    font-size: 3em; }
+  #home .button {
+    border: 3px solid white;
+    color: white; }
+    #home .button:hover {
+      background: white;
+      color: black; }
+    @media only screen and (max-width: 992px) {
+      #home .button {
+        background: white;
+        color: black; } }
+
+#about img {
+  width: 80%;
+  margin-bottom: 30px; }
+#about .button {
+  width: 300px;
+  border: 3px solid #121554;
+  color: #121554; }
+  #about .button:hover {
+    background: #121554;
+    color: white; }
+  @media only screen and (max-width: 992px) {
+    #about .button {
+      background: #121554;
+      color: white; } }
+
+#grooming {
+  background: #ddd; }
+  #grooming img {
+    width: 100%; }
+
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  letter-spacing: 1.8px; }
+  footer h3 {
+    margin: 50px 0 30px;
+    font-weight: bold; }
+  footer h5 {
+    margin-bottom: 35px; }
+  footer i {
+    margin-bottom: 30px;
+    transition: all 0.3s ease; }
+  footer a:hover {
+    color: rgba(255, 255, 255, 0.5); }
+  footer .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+/*# sourceMappingURL=stylesheet.css.map */

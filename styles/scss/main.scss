@@ -1,0 +1,30 @@
+#about {
+	img {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.button {
+		width: 300px;
+		border: 3px solid $blue;
+		color: $blue;
+
+		&:hover {
+			background: $blue;
+			color: white;
+		}
+
+		@media only screen and (max-width: 992px) {
+			background: $blue;
+			color: white;
+		}
+	}
+}
+
+#grooming {
+	background: #ddd;
+
+	img {
+		width: 100%;
+	}
+}

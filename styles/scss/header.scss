@@ -1,0 +1,96 @@
+nav {
+	width: 100%;
+	padding: 5px 0;
+	background: $blue;
+	color: white;
+	letter-spacing: initial;
+	position: fixed;
+	top: -80px;
+	transition: all 0.3s linear;
+	z-index: 100;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+	.logo {
+		font-family: 'PT Serif', serif;
+		font-size: 2.2em;
+		font-weight: bold;
+		font-style: italic;
+		float: left;
+		display: inline-block;
+		padding-top: 10px;
+	}
+
+	#nav-collapse {
+		color: white;
+		cursor: pointer;
+		display: none;
+		float: right;
+		margin: 10px 0;
+
+		@media only screen and (max-width: 992px) {
+			display: inline-block;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		float: right;
+		display: inline-block;
+
+		@media only screen and (max-width: 992px) {
+			display: none;
+			float: none;
+			clear: both;
+		}
+	}
+
+	.navItem {
+		display: inline-block;
+		font-size: 1.2em;
+		padding: 15px;
+
+		&:hover {
+			color: white;
+			cursor: pointer;
+			background: #0d103f;
+		}
+
+		@media only screen and (max-width: 992px) {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.showNav {
+		display: block;
+		width: 100%;
+	}
+}
+
+#home {
+	background: url('../images/cover.jpg') center center no-repeat;
+	background-size: cover;
+	color: white;
+	letter-spacing: 2px;
+
+	h1 {
+		margin: 45px 0 30px;
+		font-size: 3em;
+	}
+
+	.button {
+		border: 3px solid white;
+		color: white;
+
+		&:hover {
+			background: white;
+			color: black;
+		}
+
+		@media only screen and (max-width: 992px) {
+			background: white;
+			color: black;
+		}
+	}
+}
